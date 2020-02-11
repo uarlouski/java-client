@@ -56,4 +56,8 @@ public class IOSMobileCommandHelper extends MobileCommand {
         return new AbstractMap.SimpleEntry<>(
                 TOUCH_ID_ENROLLMENT, prepareArguments("enabled", enabled));
     }
+
+    public static Map.Entry<String, Map<String, ?>>  screenDetails() {
+        return new AbstractMap.SimpleEntry<>(SCREEN, ImmutableMap.of());
+    }
 }

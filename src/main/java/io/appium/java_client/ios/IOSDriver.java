@@ -62,7 +62,7 @@ public class IOSDriver<T extends WebElement>
     implements HidesKeyboardWithKeyName, ShakesDevice, HasIOSSettings, HasOnScreenKeyboard,
         LocksDevice, PerformsTouchID, FindsByIosNSPredicate<T>, FindsByIosClassChain<T>,
         PushesFiles, CanRecordScreen, HasIOSClipboard, ListensToSyslogMessages,
-        HasBattery<IOSBatteryInfo> {
+        HasBattery<IOSBatteryInfo>, HasScreenDetails {
 
     private static final String IOS_DEFAULT_PLATFORM = MobilePlatform.IOS;
 

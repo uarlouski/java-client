@@ -205,6 +205,8 @@ public class AppiumCommandExecutor extends HttpCommandExecutor {
                             }
                             message += format(" Original error: %s", e.getCause().getMessage());
                         }
+                        System.out.println(message);
+                        System.out.println(e);
                         throw new SessionNotCreatedException(message, e);
                     }
                 } finally {
